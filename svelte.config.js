@@ -1,11 +1,11 @@
 import { mdsvex } from 'mdsvex';
-import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-cloudflare';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import Prism from 'prismjs';
-import 'prismjs/components/prism-typescript';
-import 'prismjs/components/prism-javascript';
-import 'prismjs/components/prism-markdown';
-import 'prismjs/components/prism-bash';
+import 'prismjs/components/prism-typescript.js';
+import 'prismjs/components/prism-javascript.js';
+import 'prismjs/components/prism-markdown.js';
+import 'prismjs/components/prism-bash.js';
 
 const config = {
 	preprocess: [
@@ -17,7 +17,7 @@ const config = {
 			smartypants: true,
 			extension: '.md',
 			highlight: {
-				highlighter: (code: string, lang: string) => {
+				highlighter: (code, lang) => {
 					if (lang && Prism.languages[lang]) {
 						return `<pre class="language-${lang}"><code>${Prism.highlight(code, Prism.languages[lang], lang)}</code></pre>`;
 					}
