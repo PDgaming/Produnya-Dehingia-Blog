@@ -2,10 +2,11 @@ import { readdir, readFile } from 'fs/promises';
 import { join } from 'path';
 import { error } from '@sveltejs/kit';
 import { marked } from 'marked';
+import { extractMetadata } from '$lib/utils/extractMetadata';
 
 export async function load() {
     try {
-        const postsDir = join(process.cwd(), 'src/posts/Blog Posts');
+        const postsDir = join(process.cwd(), 'src/posts/Blog-Posts');
         const files = await readdir(postsDir);
 
         const posts = await Promise.all(
@@ -32,20 +33,3 @@ export async function load() {
         throw error(500, 'Failed to load blog posts');
     }
 }
-
-function extractMetadata(content: string) {
-    const metadata: { [key: string]: string } = {};
-    const commentMatch = content.match(/<!--\s*({[\s\S]*?})\s*-->/);
-
-    if (commentMatch) {
-        try {
-            const metadataStr = commentMatch[1];
-            return JSON.parse(metadataStr);
-        } catch (err) {
-            console.error('Failed to parse metadata:', err);
-            return {};
-        }
-    }
-
-    return metadata;
-} 

@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+
 	export let data;
 	const { content, metadata } = data;
 </script>
