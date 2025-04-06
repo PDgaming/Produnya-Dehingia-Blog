@@ -33,6 +33,7 @@
 		"vite": "^6.2.5"
 	},
 	"dependencies": {
+		"@sveltejs/adapter-cloudflare": "^7.0.1",
 		"@types/marked": "^5.0.2",
 		"@types/prismjs": "^1.26.5",
 		"gray-matter": "^4.0.3",
