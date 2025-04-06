@@ -13,20 +13,17 @@ export async function load() {
                 .filter(file => file.endsWith('.md'))
                 .map(async (file) => {
                     const content = await readFile(join(postsDir, file), 'utf-8');
-                    const slug = file.replace(/\.md$/, '');
-                    const { title, date } = extractFrontmatter(content);
+                    const metadata = extractMetadata(content)
 
                     return {
-                        slug,
-                        title: title || slug,
-                        date: date || new Date().toISOString(),
+                        metadata,
                         content: marked(content)
                     };
                 })
         );
 
         // Sort posts by date, newest first
-        posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+        posts.sort((a, b) => new Date(b.metadata.date).getTime() - new Date(a.metadata.date).getTime());
 
         return {
             posts
@@ -36,15 +33,14 @@ export async function load() {
     }
 }
 
-function extractFrontmatter(content: string) {
+function extractMetadata(content: string) {
     const metadata: { [key: string]: string } = {};
     const commentMatch = content.match(/<!--\s*({[\s\S]*?})\s*-->/);
 
     if (commentMatch) {
         try {
             const metadataStr = commentMatch[1];
-            const parsed = JSON.parse(metadataStr);
-            return parsed;
+            return JSON.parse(metadataStr);
         } catch (err) {
             console.error('Failed to parse metadata:', err);
             return {};
