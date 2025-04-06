@@ -11,14 +11,10 @@
             "id": "8467ef9116bdfec4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Blog Posts/welcome-to-my-blog.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "welcome-to-my-blog"
+              "title": "New tab"
             }
           }
         ]
@@ -168,6 +164,8 @@
   },
   "active": "73bd725ea57d5dbe",
   "lastOpenFiles": [
+    "Blog-Posts/welcome-to-my-blog copy.md",
+    "Blog-Posts/welcome-to-my-blog.md",
     "Blog Posts/welcome-to-my-blog.md",
     "Blog Posts/my-first-blog-post.md",
     "Blog Posts/Welcome.md",
