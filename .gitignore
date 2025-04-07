@@ -24,3 +24,6 @@ vite.config.ts.timestamp-*
 
 # lock-file
 yarn.lock
+
+# Obsidian
+.obsidian

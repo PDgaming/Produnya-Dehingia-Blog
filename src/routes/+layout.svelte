@@ -6,14 +6,29 @@
 	let { children } = $props();
 </script>
 
-<div class="main min-height-screen">
-	<div class="navbar fixed top-0 flex h-12 w-screen items-center bg-blue-400 p-2">
+<div class="main max-h-screen overflow-hidden">
+	<div class="navbar absolute w-screen top-0 flex items-centered p-2">
 		<Navbar />
 	</div>
-	<div class="content mt-16 p-2">
-		{@render children()}
+	<div class="content overflow-y-scroll overflow-x-hidden bg-base-100">
+		<div class="filler w-screen bg-base-300 h-16"></div>
+		<div class="px-2 pb-2">
+			{@render children()}
+		</div>
 	</div>
-	<div class="footer flex h-auto justify-center bg-blue-400 p-2">
+	<div class="footer flex h-auto justify-center bg-base-300 p-2">
 		<Footer />
 	</div>
 </div>
+
+<style>
+	.content {
+		height: calc(100vh - 36px);
+	}
+	.navbar {
+		border-bottom-left-radius: 15px;
+		border-bottom-right-radius: 15px;
+		background-color: var(--base-300);
+		backdrop-filter: blur(30px);
+	}
+</style>
