@@ -11,10 +11,14 @@
             "id": "8467ef9116bdfec4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Blog-Posts/how-i-created-my-own-blog-post-with svelte-in-one-day..md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "how-i-created-my-own-blog-post-with svelte-in-one-day."
             }
           }
         ]
@@ -74,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "0ef4b9beda3f924d",
@@ -162,10 +167,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "73bd725ea57d5dbe",
+  "active": "8467ef9116bdfec4",
   "lastOpenFiles": [
-    "Blog-Posts/welcome-to-my-blog copy.md",
     "Blog-Posts/welcome-to-my-blog.md",
+    "Blog-Posts/how-i-created-my-own-blog-post-with svelte-in-one-day..md",
+    "Blog-Posts/welcome-to-my-blog copy 2.md",
+    "Blog-Posts/welcome-to-my-blog copy.md",
     "Blog Posts/welcome-to-my-blog.md",
     "Blog Posts/my-first-blog-post.md",
     "Blog Posts/Welcome.md",
