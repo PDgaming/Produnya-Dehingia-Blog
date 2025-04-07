@@ -1,4 +1,4 @@
-<!-- {"title": "How I Created My Own Blog Post With Svelte And Mdsvex In One Day.", "slug": "how-i-created-my-own-blog-post-with-svelte-in-one-day", "date": "2025-05-06"}-->
+<!-- {"title": "How I Created My Own Blog Post With Svelte And Mdsvex In One Day.", "slug": "how-i-created-my-own-blog-post-with-svelte-in-one-day", "date": "2025-05-07"}-->
 
 ## Building My First Blog with Svelte and mdsvex
 
