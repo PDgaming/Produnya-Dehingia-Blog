@@ -3,6 +3,7 @@ import { join } from 'path';
 import { marked } from 'marked';
 import { extractMetadata } from '$lib/utils/extractMetadata';
 import { error } from "@sveltejs/kit"
+
 export async function load({ params }: { params: { slug: string } }) {
     const { slug } = params;
     try {

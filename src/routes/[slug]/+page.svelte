@@ -5,7 +5,7 @@
 	const { content, metadata } = data.post;
 </script>
 
-<div class="prose prose-lg bg-base-200 max-w-none rounded-xl p-2 mt-3">
+<div class="prose prose-lg bg-base-200 mt-3 flex max-w-none flex-col gap-3 rounded-xl p-2">
 	<div class="metadata">
 		<h1 class="underline">{metadata.title}</h1>
 		<p class="text-2xl">
