@@ -1,4 +1,4 @@
-<!-- {"title": "An Unexpected Discovery in the Middle of Assamese Class", "slug": "an-unexpected-discovery-in-the-middle-of-assamese-class", "date": "2025-09-23"}-->
+<!-- {"title": "An Unexpected Discovery in the Middle of Assamese Class", "slug": "an-unexpected-discovery-in-the-middle-of-assamese-class", "date": "2025-11-23"}-->
 
 Today in school, I found myself drifting away from the class and into my own thoughts. I’d been thinking a lot about what subjects I want to take in 11th grade. PCMB has been on my mind, but the part that kept bothering me is whether I’ll be able to keep up with the math. I’m not exactly _that_ good at math. But I want to study Computer Science in the future, and I’ve heard that discrete math is essential for CS. That’s what really pushed these thoughts forward.
 
