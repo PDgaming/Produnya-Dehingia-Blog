@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "an-unexpected-discovery-in-the-middle-of-assamese-class.md",
+                "file": "my-game-development-journey.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "an-unexpected-discovery-in-the-middle-of-assamese-class"
+              "title": "my-game-development-journey"
             }
           }
         ]
@@ -171,9 +171,9 @@
   },
   "active": "ccece6b4f94278fc",
   "lastOpenFiles": [
+    "an-unexpected-discovery-in-the-middle-of-assamese-class.md",
     "my-game-development-journey.md",
     "how-i-created-my-own-blog-post-with svelte-in-one-day..md",
-    "an-unexpected-discovery-in-the-middle-of-assamese-class.md",
     "Untitled.base",
     "The Plan.md",
     "welcome-to-my-blog.md",
