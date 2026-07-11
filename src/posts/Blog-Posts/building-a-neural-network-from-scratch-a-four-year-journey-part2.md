@@ -75,9 +75,7 @@ The tutorials would suddenly explode into derivatives, partial derivatives, grad
 
 The notation alone was intimidating. And for a long time, I convinced myself that backpropagation was simply beyond me.
 
-Then, about two years ago, I decided to fix one of the biggest gaps in my knowledge.
-
-I started learning calculus.
+Then, about two years ago, I decided to fix one of the biggest gaps in my knowledge. I started learning calculus.
 
 I'm still far from an expert, but learning derivatives changed something. The symbols slowly stopped looking like hieroglyphics and the equations became less frightening.
 
